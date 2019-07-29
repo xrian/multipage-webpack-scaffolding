@@ -1,0 +1,47 @@
+// Your customize CSS
+.room-page {
+  .body-wrapper {
+    .draggable-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      background: rgba(0, 0, 0, 0.1);
+
+      .centered {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .layout-area {
+        flex: 0 0 600px;
+        height: 600px;
+        background-color: rgb(38, 218, 102);
+      }
+
+      .options-area {
+        flex: 1 1 auto;
+        background-color: #bfbeba;
+        display: flex;
+        flex-flow: row wrap;
+        .item-wrapper {
+          width: 100px;
+          height: 100px;
+          background: #f5e581;
+          border: 1px solid #524f4f;
+          border-radius: 10px;
+
+          .item-draggable {
+            width: 100%;
+            height: 20px;
+            background-color: #ffffff;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+          }
+        }
+      }
+    }
+
+
+  }
+}

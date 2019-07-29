@@ -1,3 +1,8 @@
+
+添加了sass
+增加了sourceMap,方便debugger调试
+多个入口文件中,需要配置HTML位置和入口js位置.不需要在html中引用js.如果页面有使用到样式,需要在入口js文件中import对应的css样式文件
+
 # 开箱即用的多页面webpack脚手架
 最近接手一个新项目，公司官网，官网为了对爬虫友好，不合适做单页面，更不大适合用react，vue这样的框架。本来觉得几个简单的页面还需要配置webpack挺麻烦，直接ES5，css，html写写就ok，可是一旦下手开始写，离开了前端的各种得心应手的工具，回到了刀耕火种的时代。痛不欲生，即使写完了，以后的迭代维护同样痛苦。 还不如创建一个脚手架，以后遇到这种官网多页面的需求的时候拿来即用，岂不美哉。
 
@@ -53,7 +58,7 @@ npm run build
 │  README.md
 │  webpack.config.dev.js            // 开发环境的webpack配置文件
 │  webpack.config.prod.js           // 生成环境的webpack配置文件
-         
+
 
 ```
 

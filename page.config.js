@@ -14,5 +14,15 @@ module.exports = [
     name: 'contact',
     html: 'contact/contact.html',
     jsEntry: 'contact/contact.js'
+  },
+  {
+    name: 'pipeline',
+    html: 'pipeline/index.html',
+    jsEntry: 'pipeline/index.js'
+  },
+  {
+    name: 'draggabel',
+    html: 'grid-draggabel/index.html',
+    jsEntry: 'grid-draggabel/index2.js'
   }
 ]
