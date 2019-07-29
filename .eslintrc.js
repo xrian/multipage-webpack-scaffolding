@@ -1,23 +1,31 @@
 module.exports = {
-  root: true,
-  parser: 'babel-eslint',
-  parserOptions: {
-    sourceType: 'module'
-  },
-  env: {
-    browser: true,
-  },
-  extends: 'standard',
-  plugins: [
-    'html'
-  ],
-  'rules': {
-    // allow paren-less arrow functions
-    'arrow-parens': 0,
-    'semi': 0,
-    // allow async-await
-    'generator-star-spacing': 0,
-    // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
-  }
+	'env': {
+		'browser': true,
+		'es6': true,
+		'jquery': true,
+	},
+	'extends': 'eslint:recommended',
+	'parserOptions': {
+		'ecmaVersion': 2016,
+		'sourceType': 'module',
+	},
+	'rules': {
+		'no-use-before-define': ['error', { 'functions': false }], // 禁止变量使用前调用
+		'indent': [
+			'error',
+			2,
+		],
+		'linebreak-style': [
+			'error',
+			'unix',
+		],
+		'quotes': [
+			'error',
+			'single',
+		],
+		'semi': [
+			'error',
+			'always',
+		],
+	},
 };
